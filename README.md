@@ -3,6 +3,8 @@
 </p>
 <h1 align="center">🌟 Fruit App 🌟</h1>
 
+_Be sure to check [Live demo](#demo) !_
+
 This is an example application built with newly released NextJS 13. It uses technologies like SSR, SSG, dynamic routing, data fetching and other common features.
 
 <i>P.S. I am not targeting design here, the app is about demonstrating usage of NextJS 13 features.</i>
