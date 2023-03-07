@@ -1,0 +1,104 @@
+/* Global (page) */
+@keyframes scroll {
+	0% {width: 0;}
+	100% {}
+}
+.contenttitle {
+	font-size: 19px; font-weight: 500;
+	color: #000000;
+}
+
+
+/* Title block  */
+#title {
+	margin-top: 30px;
+}
+#title > div {
+	display: flex; flex-direction: row; justify-content: space-between; align-items: center;
+	height: 43px; border-radius: 7px;
+	background: #DB6161;
+}
+#title > div > div.titleblock {
+	font-size: 18px; font-weight: 500;
+	color: #FFFFFF;
+}
+#title > div > div.titleblock > img {
+	margin-right: 8px;
+}
+#title > div > span {
+	font-size: 17px; font-weight: normal;
+	color: #E0E0E0;
+}
+
+
+
+/* Content blocks */
+#content {
+	margin-top: 12px;
+	min-height: 175px;
+}
+#content > div {
+	background: #75B855BF;
+	border-radius: 7px;
+	padding: 16px;
+}
+
+/* Content block: stats */
+#content > #stats {
+	margin-right: 12px;
+	min-width: 350px;
+}
+.statswrapper {
+	display: flex; flex-direction: column; justify-content: left; align-items: flex-start;
+	font-family: 'Open Sans';
+	margin-top: 10px;
+}
+.statsblock {
+	width: 100%;
+}
+.statsblock > span {
+	font-size: 17px; font-weight: normal;
+}
+.statsblock > div {
+	height: 14px; width: 100%;
+	background: #D9D9D9;
+	border-radius: 10px;
+}
+.statsblock > div > div {
+	height: 14px; min-width: 10px;
+	animation: scroll 1.5s ease-in-out;
+	background: #157241;
+	border-radius: 10px;
+	box-shadow: none;
+}
+
+/* Content block: info */
+#content > #info {
+	display: flex; flex-direction: row; justify-content: left;
+}
+#content > #info > div#block1 {
+	margin-right: 16px;
+	display: flex; flex-direction: column;
+	justify-content: space-between;
+}
+#content > #info > div#block2 {
+	margin-left: 16px;
+	display: flex; flex-direction: column;
+	justify-content: left;
+}
+#block2 > div {
+	display: table;
+}
+#block2 > div > .fruitname {
+	display: table-row;
+}
+#block2 > div > .fruitname > span {
+	display: table-cell;
+}
+#block2 > div > .fruitname > span:nth-of-type(1) {
+	font-size: 16px; font-weight: normal;
+	padding-right: 12px;
+}
+#block2 > div > .fruitname > span:nth-of-type(2) {
+	font-size: 16px; font-weight: 200;
+}
