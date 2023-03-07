@@ -30,7 +30,11 @@ This is an example application built with newly released NextJS 13. It uses tech
 ## Usage
 
 1. `npm run dev` to run dev. server (check if the app works)
-2. `npm build` to make a build, then `npm start` to serve it. For more info: https://nextjs.org/docs/deployment
+2. `npm run build` to make a build, then `npm start` to serve it. For more info: https://nextjs.org/docs/deployment
+
+## Demo
+
+You can check out live demo [here](https://fruit-demo.c-asm.dev)
 
 ## Contributing
 
