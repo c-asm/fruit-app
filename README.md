@@ -19,7 +19,7 @@ This is an example application built with newly released NextJS 13. It uses tech
 
 ## Built with
 
-  [![Next.JS](https://img.shields.io/badge/Next.JS-Next.JS-blue?logo=nextdotjs)](https://reactjs.org)<br/>
+  [![Next.JS](https://img.shields.io/badge/Next.JS-Next.JS-blue?logo=nextdotjs)](https://nextjs.org)<br/>
   [![Bootstrap](https://img.shields.io/badge/Bootstrap-Bootstrap-blue?logo=bootstrap)](https://getbootstrap.com)
 
 #### Also app uses [this dummy api](https://fruityvice.com) and [this emoji dataset](https://github.com/iamcal/emoji-data)

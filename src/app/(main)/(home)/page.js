@@ -1,14 +1,13 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import style from '@/css/home.module.css';
 
 import getAllFruits from '@/lib/getAllFruits';
 
-import config from '@/config';
-import Image from 'next/image';
 
 export default async function Home() {
-	// Load fruits data
+	// Load fruits list
 	const fruitsData = getAllFruits();
 	var fruits = await fruitsData;
 
@@ -17,10 +16,13 @@ export default async function Home() {
 			<div className={style.fruitslist}>
 				{fruits.map((e, id) => <>
 					<div key={'fruit'+id} className={style.fruitcard}>
+						{/* Fruit title */}
 						<div className={style.fruittitle}>
 							<Image width={26} height={26} className={style.emoji} src={e.image} alt={e.name} />
 							<Link href={`/fruit/${e.id}`}>{e.name}</Link>
 						</div>
+
+						{/* Fruit stats (progress bars) */}
 						<div className={style.fruitstats}>
 							{Object.entries(e.nutritions).map((n, ni) => <>
 								<div key={'stats'+id+ni} className={style.fruitstatsblock}>

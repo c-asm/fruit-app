@@ -8,15 +8,19 @@ import style from '@/css/fruit.module.css'
 
 
 export default async function fruitPage({ params }) {
+	/// Data fetching
 	var fruit;
 	try {
 		const fruitData = getFruit(params?.id);
 		fruit = await fruitData;
 	} catch (err) {
+		// If fetch failed (fruit id not found), send 404
 		console.log(err);
 		notFound();
 	}
+	// If fruit is still not present, send 404
 	if (!fruit) notFound();
+
 
 	return (<>
 		<div style={{maxWidth: 900}} className='container'>
@@ -29,6 +33,8 @@ export default async function fruitPage({ params }) {
 					<span>{fruit.genus} | {fruit.family}</span>
 				</div>
 			</div>
+
+
 			<div id={style.content} className='row'>
 				<div id={style.stats} className='col-3'>
 					<span className={style.contenttitle}>Fruit stats:</span>
@@ -41,6 +47,7 @@ export default async function fruitPage({ params }) {
 						</div>)}
 					</div>
 				</div>
+
 				<div id={style.info}  className='col'>
 					<div id={style.block1}>
 						<span className={style.contenttitle}>Fruit photo:</span>

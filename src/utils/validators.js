@@ -6,5 +6,5 @@ export const isURL = urlString=> {
   '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*'+ // validate port and path
   '(\\?[;&a-z\\d%_.~+=-]*)?'+ // validate query string
   '(\\#[-a-z\\d_]*)?$','i'); // validate fragment locator
-	return !!urlPattern.test(urlString);
+	return !!urlPattern.test(urlString); // Double ! converts anything to bool
 }

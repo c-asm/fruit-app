@@ -1,10 +1,13 @@
-"use client";  // To use bootstrap
+"use client";  // Required to use react-bootstrap
 
+// CSS
 import style from '@/css/header.module.css';
 
+// Bootstrap UI components
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
+
 
 export default function Header() {
 	return (
